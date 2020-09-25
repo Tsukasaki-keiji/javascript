@@ -22,6 +22,8 @@ $(function () {
         );
         $("img").attr("alt", data.weather[0].main);
       })
-      .fail(function (data) {});
+      .fail(function (data) {
+        alert("通信に失敗しました。");
+      });
   });
 });
